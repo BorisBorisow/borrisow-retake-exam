@@ -39,7 +39,7 @@ jobs:
         run: sleep 60
 
   run-ui-tests:
-
+    needs: deploy
     runs-on: ubuntu-latest
 
     steps:
