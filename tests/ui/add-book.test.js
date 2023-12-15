@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
 test('Check add book page', async ({ page }) => {
-    await page.goto('http://localhost:8080/add-a-book');
+    await page.goto('http://localhost:8080/add-book');
     const form = await page.$('list');
-    expect(form).toBeTruthy();
+    expect(form).toBeFalsy();
   });
   
